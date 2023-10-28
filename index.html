@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <header >
+    <nav   class="head">
+        <div class="header">
+            <p class="Name"> Weather App</p>
+            
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example" id="dropdown">
+              <option selected>Select a City</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Pune">Pune</option>
+              <option value="Ahmedabad">Ahmedabad</option>
+              <option value="Jaipur">Jaipur</option>
+              <option value="Lucknow">Lucknow</option>
+              <option value="Kanpur">Kanpur</option>
+              <option value="Nagpur">Nagpur</option>
+              <option value="Indore">Indore</option>
+              <option value="Patna">Patna</option>
+              <option value="Bhopal">Bhopal</option>
+              <option value="Thane">Thane</option>
+              <option value="Visakhapatnam">Visakhapatnam</option>
+              <option value="Vadodara">Vadodara</option>
+              <option value="Firozabad">Firozabad</option>
+              <option value="Ludhiana">Ludhiana</option>
+              <option value="Rajkot">Rajkot</option>
+              <option value="Agra">Agra</option>
+              <option value="Varanasi">Varanasi</option>
+              <option value="Madurai">Madurai</option>
+              <option value="Allahabad">Allahabad (Prayagraj)</option>
+            </select>
+            <div id="searchbox">
+            <form >
+                <input id="city" type="search"  >
+                <button type="submit" id="submit">Search</button>
+            </form>
+          </div>
+        </div>
+
+    </nav>   
+  </header>  
+
+
+
+
+      <div id="continer">
+        <h1><span id="cityName"> </span>weather</h1>
+        <br>
+        <br>
+          <main>
+            <div id="cointer-box">
+      
+            <div id="box1">
+              <br>
+              <h4 >Tempeture</h4>
+              <div id="minbox1">
+                <hr>
+                <h1  > <span id="Temp"></span><small class="ligt"> &#8451</small></h1>
+                <ul>
+                  
+                  <li>Min Tempeture<span id="Min_temp"></span></li>
+                  <li>Max Tempeture <span id="Max_temp"></span></li>
+                </ul>
+              </div>
+            </div>
+      
+            <div id="box2">
+              <br>
+              <h4 >Humidity</h4>
+              <div id="minbox2">
+                <hr>
+                <h1 ><span id="Cloud_pct"><small class="ligt">%</small></h1>
+                <ul>
+                 
+                  <li>Feels_like <span id="Feels_like"></span></li>
+                  <li>Humidity<span id="Humidity"></span></li>
+              </div>
+            </div>
+      
+            <div id="box3">
+              <br>
+              <h4 >Wind speed</h4>
+              <div id="minbox3">
+                <hr>
+                <h1 ><span id="Wind_speed"></span><small class="ligt">KM/H</small></h1>
+                <ul>
+                
+                  <li>sunrise <span id="Sunrise"></span></li>
+                  <li>sunset <span id="Sunset"></span></li>
+                </ul>
+              </div>
+            </div>
+            </main>
+            </div>
+        
+    
+        
+
+<!-- <h2>Major cites report</h2>
+
+<div class="footer">
+  <table >
+   <div id="footerheading">
+      <tr class="">
+        <th style="width: 18%;"></th>
+        <th style="width:9%;"><h4>Cloud_pct</h4></th>
+        <th style="width:9%;"><h4>Temp</h4></th>
+        <th style="width:9%;"><h4>Feels_like</h4></th>
+        <th style="width:9%;"><h4>Humidity</h4></th>
+        <th style="width:9%;"><h4>Min_temp</h4></th>
+        <th style="width:9%;"><h4>Max_temp</h4></th>
+       <th style="width:9%;"><h4>Wind_speed</h4></th>
+       <th style="width:9%;"><h4>Wind_degrees</h4></th>
+       <th style="width:9%;"><h4>Sunrise</h4></th>
+       <th style="width:9%;"><h4>Sunset</h4></th>
+       
+    </div>
+    <tr>
+      
+      <th ><h4 id="new york">New York City</h4></th>
+      <td><span id="Cloud_pct1"></span></td>
+      <td><span id="Temp2"></span></td>
+      <td><span id="Feels_like3"></span></td>
+      <td><span id="Humidity4"></span></td>
+      <td><span id="Min_temp5"></span></td>
+      <td><span id="Max_temp6"></span></td>
+      <td><span id="Wind_speed7"></span></td>
+      <td><span id="Wind_degrees8"></span></td>
+      <td><span id="Sunrise9"></span></td>
+      <td><span id="Sunset0"></span></td>
+    </tr>
+  
+
+    <tr>
+     
+      <th ><h4 id="tokyo">Tokyo</h4></th>
+      <td><span id="Cloud_pctt"></span></td>
+      <td><span id="Tempt"></span></td>
+      <td><span id="Feels_liket"></span></td>
+      <td><span id="Humidityt"></span></td>
+      <td><span id="Min_tempt"></span></td>
+      <td><span id="Max_tempt"></span></td>
+      <td><span id="Wind_speedt"></span></td>
+      <td><span id="Wind_degreest"></span></td>
+      <td><span id="Sunriset"></span></td>
+      <td><span id="Sunsett"></span></td>
+    </tr>
+
+    <tr>
+      <th ><h4>London</h4></th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>8</td>
+    </tr>
+
+    <tr>
+      <th ><h4>Paris</h4></th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>8</td>
+    </tr>
+
+    <tr>
+      <th ><h4>mumbai</h4></th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>8</td>
+    </tr>
+
+    <tr>
+      <th ><h4>Dubai</h4></th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>8</td>
+    </tr>
+
+    <tr>
+      <th ><h3>Beijing</h3></th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>8</td>
+    </tr>
+  </table>
+  </div> -->
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
